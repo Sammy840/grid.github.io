@@ -387,28 +387,39 @@ footer a:hover{
 	grid-template-areas: 
 		'showcase showcase'
 		'a a'
-		'b  b';
+		'b b';
 		grid-gap: 10px;
 	}
 
 	.top-b {
 		grid-area: b;
+		margin-bottom: -100px;
 	}
 
 	.top-a {
 		grid-area: a;
+
 	}
 
 	.showcase-about {
 		grid-area: showcase;
-		max-height: 100px;
-		
+		margin-bottom: 10px;
 	}
 
 	.showcase-about h1 {
 			font-size: 2.5rem;
 	}
 
+	.boxes {
+		margin-top: -90rem;
+	}
+
+	.box {
+		padding-top: 120px;
+		text-align: center;
+	}
+
+	/* contact Page */
 	.cont {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -426,7 +437,7 @@ footer a:hover{
 	top: 40%;
 	left: 35%;
 	transform: translate(-50%, _50%);
-	width: 380px;
+	width:100%;
 	padding: 40px;
 	background: rgba(0,0,0,.5);
 	box-sizing: border-box;
