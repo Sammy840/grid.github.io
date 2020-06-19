@@ -305,6 +305,7 @@ div .print{
 }
 
 .box {
+	grid-template-columns: repeat(3, 1fr); 
 	background: var(--primary);
 	text-align: center;
 	padding: 1.5rem 2rem;
@@ -356,7 +357,7 @@ footer a:hover{
 
 /* Media Queries */
 @media (max-width: 700px) {
-	.top-container{
+	.top-container {
 		grid-template-areas: 
 		'showcase showcase'
 		'top-box-a top-box-b';
@@ -372,13 +373,25 @@ footer a:hover{
 
 	.info {
 		grid-template-columns: 1fr; 
-	}
-
-	.info .btn {
 		display: block;
 		text-align: center;
 		margin:auto;
 	}
+
+	.btn {
+		font-size: 20px;
+		display: block;
+		text-align: center;
+		margin:0;
+	}
+
+	.top-box-a {
+	grid-area: top-box-a;
+}
+
+.top-box-b {
+	grid-area: top-box-b;
+}
 
 
 	/* About page*/
@@ -394,11 +407,16 @@ footer a:hover{
 	.top-b {
 		grid-area: b;
 		margin-bottom: -100px;
+
+	}
+
+	.top-b p {
+		margin-top: -90px;
+
 	}
 
 	.top-a {
 		grid-area: a;
-
 	}
 
 	.showcase-about {
@@ -410,11 +428,11 @@ footer a:hover{
 			font-size: 2.5rem;
 	}
 
-	.boxes {
+	.boxes-about {
 		margin-top: -90rem;
 	}
 
-	.box {
+	.box-about {
 		padding-top: 120px;
 		text-align: center;
 	}
